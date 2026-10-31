@@ -168,9 +168,9 @@ export const projects = [
       },
     ],
     screens: [
-      { src: null, alt: "Qup ASI explore screen with key concepts" }, // e.g. "/screens/asi-explore.webp"
-      { src: null, alt: "Qup ASI forecast chart" }, // e.g. "/screens/asi-forecasts.webp"
-      { src: null, alt: "Qup ASI timeline" }, // e.g. "/screens/asi-timeline.webp"
+      { src: "/screens/asi-explore.webp", alt: "Qup ASI explore screen with key concepts" },
+      { src: "/screens/asi-forecasts.webp", alt: "Qup ASI forecast chart" },
+      { src: "/screens/asi-orgs.webp", alt: "Qup ASI organizations working on superintelligence" },
     ],
     web: {
       url: "qupasi.com",
