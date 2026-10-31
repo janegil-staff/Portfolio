@@ -52,7 +52,8 @@ export default function Home() {
             </div>
 
             <div className="hero__stage" aria-hidden="true">
-              {projects.slice(0, 3).map((p, i) => (
+              {/* Only apps with a real first screenshot — an empty frame up here looks unfinished. */}
+              {projects.filter((p) => p.screens[0]?.src).slice(0, 3).map((p, i) => (
                 <div key={p.id} className={`hero__card hero__card--${i}`} style={{ "--accent": p.accent }}>
                   <Phone src={p.screens[0].src} alt={p.name} accent={p.accent} priority={i === 0} />
                 </div>

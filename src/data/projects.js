@@ -9,7 +9,7 @@ export const site = {
   location: "Norway",
   email: "jan.egil.staff@qupda.com",
   intro:
-    "I build complete apps on my own: the iPhone and Android app, the web app and the server behind them. Two of them are live today.",
+    "I build complete apps on my own: the iPhone and Android app, the web app and the server behind them. Two of them are live today, and a third is on its way.",
 };
 
 export const projects = [
@@ -111,8 +111,8 @@ export const projects = [
     ],
     screens: [
       { src: "/screens/pulse-splash.webp", alt: "Qup Pulse start screen" },
-      { src: null, alt: "Qup Pulse local feed" }, // add a screenshot, e.g. "/screens/pulse-feed.webp"
-      { src: null, alt: "Qup Pulse people nearby" }, // add a screenshot, e.g. "/screens/pulse-nearby.webp"
+      { src: "/screens/pulse-feed.webp", alt: "Qup Pulse local feed" },
+      { src: "/screens/pulse-profile.webp", alt: "Qup Pulse profile page" },
     ],
     web: {
       url: "quppulse.com",
@@ -128,6 +128,65 @@ export const projects = [
       { label: "quppulse.com", href: "https://quppulse.com" },
     ],
     stack: ["Expo / React Native", "WebRTC", "Next.js", "Node.js API", "MongoDB", "DigitalOcean"],
+  },
+  {
+    id: "asi",
+    name: "Qup ASI",
+    tagline: "When could AI surpass us?",
+    accent: "#8B6CFF",
+    accentSoft: "#1B1748",
+    dark: true, // the app and site are dark, like this section
+    icon: "/screens/asi-icon.png",
+    description: [
+      "Qup ASI is a guide to artificial superintelligence: AI that could one day far exceed human ability. It explains the ideas behind the debate in plain language and gathers what the experts actually predict, so anyone can follow one of the big questions of our time.",
+      "Forecasts from surveys, professional forecasters and AI lab leaders sit side by side on one chart, each showing the year it gives roughly even odds, with a link to the source. A timeline runs from Turing to today, and a directory covers the labs, researchers and government institutes working on it. The app and qupasi.com read from the same API.",
+    ],
+    features: [
+      {
+        title: "Key ideas explained",
+        text: "Definitions, theory, safety, governance and capability, in plain language.",
+      },
+      {
+        title: "Expert forecasts",
+        text: "Surveys, forecasters and lab leaders on one chart, with every source linked.",
+      },
+      {
+        title: "Timeline since 1950",
+        text: "The papers, books and events that shaped thinking about superintelligence.",
+      },
+      {
+        title: "Who is working on it",
+        text: "Frontier labs, safety researchers and government institutes.",
+      },
+      {
+        title: "Search everything",
+        text: "One search across concepts, forecasts, organizations and milestones.",
+      },
+      {
+        title: "35 languages",
+        text: "From Norwegian to Japanese, including right-to-left Arabic and Hebrew.",
+      },
+    ],
+    screens: [
+      { src: null, alt: "Qup ASI explore screen with key concepts" }, // e.g. "/screens/asi-explore.webp"
+      { src: null, alt: "Qup ASI forecast chart" }, // e.g. "/screens/asi-forecasts.webp"
+      { src: null, alt: "Qup ASI timeline" }, // e.g. "/screens/asi-timeline.webp"
+    ],
+    web: {
+      url: "qupasi.com",
+      // Several web screenshots are shown side by side
+      shots: [
+        { src: "/screens/asi-web-home.webp", alt: "qupasi.com home page: When could AI surpass us?" },
+        { src: "/screens/asi-web-forecasts.webp", alt: "qupasi.com forecasts: expert predictions on one chart" },
+      ],
+    },
+    links: [
+      // No href = shown as a muted pill. Add the store URLs when the app is live.
+      { label: "App Store (soon)", href: null },
+      { label: "Google Play (soon)", href: null },
+      { label: "qupasi.com", href: "https://qupasi.com" },
+    ],
+    stack: ["Expo Router / React Native", "Next.js", "Node.js API", "i18next", "DigitalOcean", "Vercel"],
   },
 ];
 
