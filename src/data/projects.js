@@ -182,7 +182,7 @@ export const projects = [
     },
     links: [
       // No href = shown as a muted pill. Add the store URLs when the app is live.
-      { label: "App Store (soon)", href: null },
+      { label: "App Store", href: "https://apps.apple.com/app/id6829129341" },
       { label: "Google Play (soon)", href: null },
       { label: "qupasi.com", href: "https://qupasi.com" },
     ],
